@@ -139,7 +139,8 @@ while True:
         time2 = time.time()
         if (time2-time1 > 5):
             time1 = time2
-            logger.info(f'test_KRW : {test_krw} test_BTC : {test_btc}')
+            logger.info(
+                f'current_price : {current_price} target_price : {target_price} test_KRW : {test_krw} test_BTC : {test_btc}')
     except Exception as e:
         print(e)
         time.sleep(1)
